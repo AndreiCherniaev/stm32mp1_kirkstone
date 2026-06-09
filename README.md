@@ -20,6 +20,12 @@ To disable this apparmor restriction
 echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
 ```
 You will need to run this command every time you reboot your machine.
+## Set git credits
+Finally, if not done already, configure a git username and email as some recipe can fail without it
+```
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+```
 ## Build distro
 ```
 source poky/oe-init-build-env
